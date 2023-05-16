@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginx_forward
+    ports:
+      - 8080:8080
+      - 8081:8081
+    image: forward_proxy
